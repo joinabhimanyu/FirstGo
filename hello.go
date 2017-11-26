@@ -86,3 +86,6 @@ func main(){
   Receive(person)
   Receive(tiger)
 }
+
+
+
