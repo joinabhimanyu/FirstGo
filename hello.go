@@ -61,6 +61,18 @@ func Receive(i ILiving) {
   fmt.Println("Instance received successfully, Details are:")
 } 
 
+func PrintStrings(vals []string){
+  for _,val:=range vals {
+    fmt.Println(val);
+  }
+}
+
+func PrintInts(vals []int){
+  for _,val:=range vals{
+    fmt.Println(val)
+  }
+}
+
 func main(){
   who:="World"
   if len(os.Args)==1{
@@ -85,7 +97,10 @@ func main(){
 
   Receive(person)
   Receive(tiger)
+  str:=[]string{"df","wer"}
+  fmt.Println("Printing strings")
+  PrintStrings(str)
+  ints:=[]int{1,3,4}
+  fmt.Println("Printing ints")
+  PrintInts(ints)
 }
-
-
-
